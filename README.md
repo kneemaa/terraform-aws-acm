@@ -59,6 +59,7 @@ module "acm" {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
+| certificate_transparency_logging | Enables certificate transparancy log. Options are ENABLED or DISABLED | string | `"DISABLED"` | no |
 | create\_certificate | Whether to create ACM certificate | string | `"true"` | no |
 | domain\_name | A domain name for which the certificate should be issued | string | `""` | no |
 | subject\_alternative\_names | A list of domains that should be SANs in the issued certificate | list | `[]` | no |

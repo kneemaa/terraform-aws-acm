@@ -43,3 +43,8 @@ variable "tags" {
   type        = "map"
   default     = {}
 }
+
+variable "certificate_transparency_logging" {
+  description = "Enables certificate transparancy log. Options are ENABLED or DISABLED"
+  default     = "DISABLED"
+}

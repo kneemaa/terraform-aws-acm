@@ -7,6 +7,10 @@ resource "aws_acm_certificate" "this" {
 
   tags = "${var.tags}"
 
+  options {
+    certificate_transparency_logging_preference = "${var.certificate_transparency_logging}"
+  }
+
   lifecycle {
     create_before_destroy = true
   }
